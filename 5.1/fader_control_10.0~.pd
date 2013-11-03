@@ -1,0 +1,110 @@
+#N canvas -11 40 1425 829 10;
+#X obj 1 102 cnv 15 818 296 empty empty fader_control_10.0~ 20 18 0
+14 -233017 -66577 0;
+#X obj 6 150 vsl 30 239 0 127 0 0 empty empty L 12 -9 0 14 -262144
+-1 -1 0 1;
+#X obj 37 150 vu 20 240 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 88 150 vsl 30 239 0 127 0 0 empty empty R 12 -9 0 14 -262144
+-1 -1 0 1;
+#X obj 119 150 vu 20 240 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 169 150 vsl 30 239 0 127 0 0 empty empty LS 12 -9 0 14 -262144
+-1 -1 0 1;
+#X obj 200 150 vu 20 240 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 250 150 vsl 30 239 0 127 0 0 empty empty RS 12 -9 0 14 -262144
+-1 -1 0 1;
+#X obj 281 150 vu 20 240 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 331 150 vsl 30 239 0 127 0 0 empty empty Ld 12 -9 0 14 -262144
+-1 -1 0 1;
+#X obj 362 150 vu 20 240 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 412 150 vsl 30 239 0 127 0 0 empty empty Rd 12 -9 0 14 -262144
+-1 -1 0 1;
+#X obj 443 150 vu 20 240 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 493 150 vsl 30 239 0 127 0 0 empty empty LSd 12 -9 0 14 -262144
+-1 -1 0 1;
+#X obj 524 150 vu 20 240 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 574 150 vsl 30 239 0 127 0 0 empty empty RSd 12 -9 0 14 -262144
+-1 -1 0 1;
+#X obj 605 150 vu 20 240 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 655 150 vsl 30 239 0 127 0 0 empty empty C 12 -9 0 14 -262144
+-1 -1 0 1;
+#X obj 686 150 vu 20 240 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 736 150 vsl 30 239 0 127 0 0 empty empty CSd 12 -9 0 14 -262144
+-1 -1 0 1;
+#X obj 767 150 vu 20 240 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 27 533 env~;
+#X obj 3 46 inlet~ \$0-vu-meter-L;
+#X obj 109 534 env~;
+#X obj 188 532 env~;
+#X obj 270 533 env~;
+#X obj 351 531 env~;
+#X obj 432 532 env~;
+#X obj 515 530 env~;
+#X obj 596 527 env~;
+#X obj 677 528 env~;
+#X obj 757 525 env~;
+#X obj 5 533 *~;
+#X obj 86 534 *~;
+#X obj 166 532 *~;
+#X obj 247 533 *~;
+#X obj 329 531 *~;
+#X obj 410 532 *~;
+#X obj 492 530 *~;
+#X obj 573 527 *~;
+#X obj 654 528 *~;
+#X obj 735 525 *~;
+#X obj 5 568 outlet~ \$0-vu-meter-L;
+#X obj 166 568 outlet~ \$0-vu-meter-L;
+#X obj 329 567 outlet~ \$0-vu-meter-L;
+#X obj 492 567 outlet~ \$0-vu-meter-L;
+#X obj 654 565 outlet~ \$0-vu-meter-L;
+#X obj 86 605 outlet~ \$0-vu-meter-L;
+#X obj 247 604 outlet~ \$0-vu-meter-L;
+#X obj 410 603 outlet~ \$0-vu-meter-L;
+#X obj 573 603 outlet~ \$0-vu-meter-L;
+#X obj 735 601 outlet~ \$0-vu-meter-L;
+#X obj 152 45 inlet~ \$0-vu-meter-R;
+#X obj 20 66 inlet Fader_control_L;
+#X obj 167 64 inlet Fader_control_R;
+#X obj 303 43 inlet~ \$0-vu-meter-LS;
+#X obj 319 63 inlet Fader_control_LS;
+#X obj 597 38 inlet~ \$0-vu-meter-Ld;
+#X obj 611 59 inlet Fader_control_Rd;
+#X obj 843 34 inlet~ \$0-vu-meter-LSd;
+#X obj 858 55 inlet Fader_control_RSd;
+#X obj 1004 31 inlet~ \$0-vu-meter-LSd;
+#X obj 1019 52 inlet Fader_control_RSd;
+#X obj 446 41 inlet~ \$0-vu-meter-RS;
+#X obj 462 61 inlet Fader_control_S;
+#X connect 21 0 2 0;
+#X connect 22 0 32 0;
+#X connect 23 0 4 0;
+#X connect 24 0 6 0;
+#X connect 25 0 8 0;
+#X connect 26 0 10 0;
+#X connect 27 0 12 0;
+#X connect 28 0 14 0;
+#X connect 29 0 16 0;
+#X connect 30 0 18 0;
+#X connect 31 0 20 0;
+#X connect 32 0 42 0;
+#X connect 32 0 21 0;
+#X connect 33 0 47 0;
+#X connect 33 0 23 0;
+#X connect 34 0 43 0;
+#X connect 34 0 24 0;
+#X connect 35 0 48 0;
+#X connect 35 0 25 0;
+#X connect 36 0 44 0;
+#X connect 36 0 26 0;
+#X connect 37 0 49 0;
+#X connect 37 0 27 0;
+#X connect 38 0 45 0;
+#X connect 38 0 28 0;
+#X connect 39 0 50 0;
+#X connect 39 0 29 0;
+#X connect 40 0 46 0;
+#X connect 40 0 30 0;
+#X connect 41 0 51 0;
+#X connect 41 0 31 0;
+#X connect 53 0 32 1;
+#X coords 0 -1 1 1 820 300 1 0 100;

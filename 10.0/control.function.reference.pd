@@ -1,0 +1,42 @@
+#N canvas 659 252 447 453 10;
+#X text 17 22 *;
+#X text 17 32 *;
+#X text 17 43 *;
+#X text 17 53 *;
+#X text 263 12 *;
+#X text 11 12 /*******************************************;
+#X text 11 81 /*******************************************;
+#X text 15 113 k -> uma constante \, dependente da escala a ser usada
+\;;
+#X text 33 67 do professor Mannis \, J.A.;
+#X text 17 62 *;
+#X text 17 72 *;
+#X obj 23 344 outlet;
+#X obj 236 172 expr if($f1==0 \, 127 \, $f1);
+#X obj 236 150 \$1;
+#X obj 23 146 loadbang;
+#X text 260 151 escolhe k=127 como default;
+#X text 14 97 domínio (lim x->-*inf);
+#X text 44 127 aqui \, k = 127 (valores MIDI);
+#X obj 23 276 verifica.trunca;
+#X obj 236 195 t f f;
+#X text 13 410 Guilherme Lunhani - gcravista@gmail.com \, twitter:@_ovarc
+;
+#X text 130 425 (inserir objetos para enviarem um email e twitarem)
+;
+#X obj 23 243 expr ($f1-1)/(exp(1)*(exp(1)-1))-1;
+#X text 32 54 f(x) = ((e(e-1))^x/k)-1/e(e-1)-1;
+#X obj 23 217 expr pow(exp(1)*(exp(1)-1) \, 0/$f2);
+#X text 33 27 referencia de valor para pegar o menor valor possivel
+\, baseada na função:;
+#X obj 23 165 t b b;
+#X connect 12 0 19 0;
+#X connect 13 0 12 0;
+#X connect 14 0 26 0;
+#X connect 18 0 11 0;
+#X connect 19 0 24 1;
+#X connect 19 1 18 1;
+#X connect 22 0 18 0;
+#X connect 24 0 22 0;
+#X connect 26 0 24 0;
+#X connect 26 1 13 0;

@@ -1,0 +1,43 @@
+#N canvas 715 210 544 406 10;
+#X obj 49 384 outlet~;
+#X obj 112 384 outlet~;
+#X obj 6 281 readsf~ 2;
+#X obj 6 319 *~;
+#X obj 31 319 *~;
+#X obj 113 224 dbtorms;
+#X obj 55 17 hsl 100 10 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 9900 1;
+#X obj 6 17 bng 10 250 50 0 empty empty empty 17 7 0 10 -257985 -1
+-1;
+#X obj 33 73 openpanel;
+#X msg 33 100 set open \$1;
+#X obj 6 47 t b b;
+#X msg 6 140 open /Users/guilherme/Documents/Trabalhos_diversos/Compositions/Navio Negreiro/Navio II.wav
+;
+#X obj 20 17 bng 10 250 50 0 empty empty empty 17 7 0 10 -4034 -1 -1
+;
+#X msg 17 230 1;
+#X msg 45 229 0;
+#X obj 34 17 bng 10 250 50 0 empty empty empty 17 7 0 10 -258113 -1
+-1;
+#X obj 43 47 t b b;
+#X connect 2 0 3 0;
+#X connect 2 1 4 0;
+#X connect 3 0 0 0;
+#X connect 4 0 1 0;
+#X connect 5 0 4 1;
+#X connect 5 0 3 1;
+#X connect 6 0 5 0;
+#X connect 7 0 10 0;
+#X connect 8 0 9 0;
+#X connect 9 0 11 0;
+#X connect 10 0 11 0;
+#X connect 10 1 8 0;
+#X connect 11 0 2 0;
+#X connect 12 0 16 0;
+#X connect 13 0 2 0;
+#X connect 14 0 2 0;
+#X connect 15 0 14 0;
+#X connect 16 0 13 0;
+#X connect 16 1 11 0;
+#X coords 0 -1 1 1 165 30 1 0 0;

@@ -1,0 +1,40 @@
+#N canvas 0 22 544 406 10;
+#X obj 42 293 outlet~;
+#X obj 105 293 outlet~;
+#X obj 43 189 readsf~ 2;
+#X obj 43 227 *~;
+#X obj 68 227 *~;
+#X obj 106 133 dbtorms;
+#X obj 152 117 hsl 100 10 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 103 117 bng 10 250 50 0 empty empty empty 17 7 0 10 -257985
+-1 -1;
+#X obj 27 22 openpanel;
+#X msg 27 52 set open \$1;
+#X obj 27 2 t b b;
+#X msg 43 72 open /Users/guilherme/Music/musicas/MINE/Transito no Tibet.wav
+;
+#X obj 133 117 bng 10 250 50 0 empty empty empty 17 7 0 10 -4034 -1
+-1;
+#X msg 52 138 1;
+#X msg 56 161 0;
+#X obj 118 117 bng 10 250 50 0 empty empty empty 17 7 0 10 -258113
+-1 -1;
+#X connect 2 0 3 0;
+#X connect 2 1 4 0;
+#X connect 3 0 0 0;
+#X connect 4 0 1 0;
+#X connect 5 0 4 1;
+#X connect 5 0 3 1;
+#X connect 6 0 5 0;
+#X connect 7 0 10 0;
+#X connect 8 0 9 0;
+#X connect 9 0 11 0;
+#X connect 10 0 11 0;
+#X connect 10 1 8 0;
+#X connect 11 0 2 0;
+#X connect 12 0 13 0;
+#X connect 13 0 2 0;
+#X connect 14 0 2 0;
+#X connect 15 0 14 0;
+#X coords 0 -1 1 1 165 30 1 100 100;

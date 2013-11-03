@@ -1,0 +1,81 @@
+#N canvas 774 141 756 505 10;
+#X obj 14 35 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X text 13 12 L;
+#X obj 227 445 remote.control.send;
+#X obj 71 35 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 130 34 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 187 34 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 244 34 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 301 34 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 360 33 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 417 33 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 471 34 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 528 34 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X text 70 12 R;
+#X text 129 11 Ld;
+#X text 186 11 Rd;
+#X text 243 11 LS;
+#X text 300 11 RS;
+#X text 357 10 LSd;
+#X text 414 10 RSd;
+#X text 470 11 C;
+#X text 526 11 CSd;
+#X obj 14 355 *;
+#X obj 70 354 *;
+#X obj 131 358 *;
+#X obj 187 357 *;
+#X obj 244 354 *;
+#X obj 305 358 *;
+#X obj 361 357 *;
+#X obj 419 352 *;
+#X obj 480 356 *;
+#X obj 536 355 *;
+#X obj 594 268 expr if($f1==0 \, 127 \, $f1);
+#X obj 594 239 \$1;
+#X obj 591 210 loadbang;
+#X obj 619 172 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X connect 0 0 21 0;
+#X connect 3 0 22 0;
+#X connect 4 0 23 0;
+#X connect 5 0 24 0;
+#X connect 6 0 25 0;
+#X connect 7 0 26 0;
+#X connect 8 0 27 0;
+#X connect 9 0 28 0;
+#X connect 10 0 29 0;
+#X connect 11 0 30 0;
+#X connect 21 0 2 0;
+#X connect 22 0 2 1;
+#X connect 23 0 2 2;
+#X connect 24 0 2 3;
+#X connect 25 0 2 4;
+#X connect 26 0 2 5;
+#X connect 27 0 2 6;
+#X connect 28 0 2 7;
+#X connect 29 0 2 8;
+#X connect 30 0 2 9;
+#X connect 31 0 30 1;
+#X connect 31 0 29 1;
+#X connect 31 0 28 1;
+#X connect 31 0 27 1;
+#X connect 31 0 26 1;
+#X connect 31 0 25 1;
+#X connect 31 0 24 1;
+#X connect 31 0 23 1;
+#X connect 31 0 22 1;
+#X connect 31 0 21 1;
+#X connect 32 0 31 0;
+#X connect 33 0 32 0;
+#X connect 34 0 32 0;
+#X coords 0 -1 1 1 550 170 1 7 0;

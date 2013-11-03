@@ -1,0 +1,9 @@
+#N canvas 0 22 453 134 10;
+#X obj 6 10 inlet valor;
+#X obj 6 65 expr if($f1>$f1 \, $f2 \, $f1);
+#X obj 159 10 inlet limite;
+#X text 238 10 determinado durante o [loadbang];
+#X obj 6 98 outlet;
+#X connect 0 0 1 0;
+#X connect 1 0 4 0;
+#X connect 2 0 1 1;
